@@ -36,7 +36,6 @@ for key, value in dict_types.items():
         for i in value:
             numerical_dataframe[str(i)] = df[str(i)]
 
-#numerical_dataframe.to_csv("numerical.csv")
 
 NO_missing_values = df["province"].isnull().sum(axis=0)
 NO_total_values = df["province"].count()
@@ -44,11 +43,11 @@ NO_total_values = df["province"].count()
 print(" Null: {0} \n Not Null: {1} \n total {2} \n percentage of missing values {3}".format(NO_missing_values,NO_total_values,NO_total_values + NO_missing_values,NO_missing_values/NO_total_values*100))
 
 
-print(numerical_dataframe.columns)
-print(object_dataframe["district"].value_counts().shape)
-print(object_dataframe["district"].value_counts())
+#print(numerical_dataframe.columns)
+#print(object_dataframe["district"].value_counts().shape)
+#print(object_dataframe["district"].value_counts())
 
 plt.figure(figsize=(15,8))
 sns.distplot(df["age_source2"], bins=30)
-plt.show()
+#plt.show()
 

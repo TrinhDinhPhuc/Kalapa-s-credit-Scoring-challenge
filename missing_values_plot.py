@@ -34,4 +34,4 @@ sns.heatmap(train.corr(),linewidths=0.1,vmax=1.0,
 # Note that the categorical features have been neglected in the
 # correlation matrix.
 
-plt.show()
+
